@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:wght@300&display=swap');
+
+.wrapper {
+	width: 580px;
+	margin: auto;	
+}
+
+body {
+
+}
+
+header {
+	background-color: #0030A1;
+}
+
+footer {
+	background-color: #0030A1;
+}
+
+h1 {
+	font-family: "Anton", sans-serif;
+	color: white;
+	margin: 0px;
+	padding-top: 10px;
+	font-size: 48px;
+	text-align:center;
+	letter-spacing: 1.5px;
+}
+
+h2 {
+	margin-top: 0;
+	padding-bottom: 20px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 24px;
+	letter-spacing: 1.5px;
+	text-align: center;
+	color: white;
+}
+
+h3 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 24px;	
+}
+
+main h2 {
+	margin: 20px 0 20px 0;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 24px;
+	letter-spacing: 1.5px;
+	text-align: center;
+	color: black;
+	padding-bottom: 0;
+}
+
+main p {
+	font-family: 'Josefin Sans', sans-serif;
+	padding: 20px;
+	font-size: 22px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 20px;
+}
+
+main .about-me {
+	color: white;
+}
+
+img {
+	width: 100%;
+}
+
+main img {
+	border-radius: 50%;
+}
+
+ol, ul {
+  padding: 8px;
+  margin: 6px;
+  display: inline-block;
+  text-align: left;
+  width: 500px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding-left: 100px;
+}
+
+footer a {
+	color: white;
+	padding: 5px;
+	text-align: center;
+	margin: auto;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+hr {
+  width: 50%;
+}
+
+.bg {
+	background-color: #0030A1;
+}
+
+.group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
+}
+
+.item {
+	flex: 1;
+	margin: auto;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.item-double {
+	flex: 2;
+}
+
+#white-font {
+	color: white;
+	text-decoration: none;
+}
+
+.square-image {
+	border-radius: 0;
+}
+
+.contact-me {
+  color: white;
+  padding: 5px;
+  text-align: center;
+  margin: auto;
+}
+
+.project-section {
+  text-align: center;
+}
+
+.project-section h3 {
+	padding: 20px 0 0 0;
+}
+
+.project-section p {
+	padding: 0;
+	margin: 0;
+}
+
+/* Set link colors */
+a:link {color: black;}
+a:visited {color: black;}
+a:hover {color: #0030A1;}
+a:active {color: black;}
+
+
+/* Groups & Items (Desktop) */
+
+@media all and (min-width: 500px) {
+	.wrapper {
+		width: 60%;
+		margin: auto;
+	}
+
+	.group {
+		flex-direction: row;
+	}
+}
+
+@media all and (min-width: 800px) {
+	.wrapper {
+		width: 60%;
+		margin: auto;
+	}
+
+	.group {
+		flex-direction: row;
+	}
+}

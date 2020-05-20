@@ -118,7 +118,22 @@ hr {
 	flex: 2;
 }
 
+.white-font {
+	color: white;
+	text-decoration: none;
+}
+
 #white-font {
+	color: white;
+	text-decoration: none;
+}
+
+#white-font-again {
+	color: white;
+	text-decoration: none;
+}
+
+#white-font-and-again {
 	color: white;
 	text-decoration: none;
 }

@@ -63,11 +63,15 @@ ol, ul {
   margin: 6px;
   display: inline-block;
   text-align: left;
-  width: 500px;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 20px;
   margin-bottom: 20px;
   padding-left: 100px;
+/*  width: 100%; */
+}
+
+main li {
+	width: 100%; 
 }
 
 /* Header */
@@ -184,6 +188,7 @@ main .about-me {
 
 .item-double {
 	flex: 2;
+	width: 100%;
 }
 
 /* Form Style */
@@ -292,10 +297,14 @@ a:active {color: black;}
     flex-direction: row;
   }
 
+  .item-double {
+  	width: 600px;
+  }
+
 /* 	.wrapper {
 		width: 60%;
 		margin: auto;
-	}
+file:///C:/Users/julie/OneDrive/Desktop/www/Flexbox-Portfolio/index.html#	}
 
 	.group {
 		flex-direction: row;
@@ -324,6 +333,10 @@ a:active {color: black;}
 
 	header nav {
     margin-top: 8px;
+  }
+
+  ol, ul {
+  	width: 80%;
   }
 }
 

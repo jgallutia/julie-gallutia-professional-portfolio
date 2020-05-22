@@ -1,20 +1,9 @@
+/* General Styles */
+
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:wght@300&display=swap');
 
-.wrapper {
-	width: 580px;
-	margin: auto;	
-}
-
 body {
-
-}
-
-header {
-	background-color: #0030A1;
-}
-
-footer {
-	background-color: #0030A1;
+	margin: 0;
 }
 
 h1 {
@@ -61,10 +50,6 @@ main p {
 	margin-left: 20px;
 }
 
-main .about-me {
-	color: white;
-}
-
 img {
 	width: 100%;
 }
@@ -85,6 +70,80 @@ ol, ul {
   padding-left: 100px;
 }
 
+/* Header */
+
+header h1 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+}
+
+header h2 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a:link {
+  color: white;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+}
+
+header nav ul li a:active {
+  color: white;
+}
+
+header nav ul li a:visited {
+  color: white;
+}
+
+header {
+	background-color: #0030A1;
+	margin-bottom: 40px;
+}
+
+/* Footer */
+
+footer {
+	background-color: #0030A1;
+}
+
+footer a:link {
+	color: white;
+}
+
+footer a:visited {
+	color: white;
+}
+
+footer a:active {
+	color: white;
+}
+
 footer a {
 	color: white;
 	padding: 5px;
@@ -93,12 +152,21 @@ footer a {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
-hr {
-  width: 50%;
+/* Specific Classes */
+
+main .about-me {
+	color: white;
 }
 
 .bg {
 	background-color: #0030A1;
+}
+
+/* Groups & Items  (Mobile First) */
+
+.wrapper {
+	width: 100%;
+/* margin: auto; */
 }
 
 .group {
@@ -118,22 +186,63 @@ hr {
 	flex: 2;
 }
 
+/* Form Style */
+
+form {
+  position : relative;
+  margin : 0 auto;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+form label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: arial;
+}
+
+form input[type=text] {
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+form input[type=text]#zip {
+  width: 51px;
+}
+
+form input[type=email] {
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 20px;	
+}
+
+form textarea {	
+ width: 50%;
+ color: #000;
+ font-size: 16px;
+ margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+ width: 100%;
+ margin-bottom: 20px;
+}
+
+form button {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #000;
+    border-radius: 10px;
+}
+
 .white-font {
-	color: white;
-	text-decoration: none;
-}
-
-#white-font {
-	color: white;
-	text-decoration: none;
-}
-
-#white-font-again {
-	color: white;
-	text-decoration: none;
-}
-
-#white-font-and-again {
 	color: white;
 	text-decoration: none;
 }
@@ -162,17 +271,28 @@ hr {
 	margin: 0;
 }
 
-/* Set link colors */
+
+Set link colors 
 a:link {color: black;}
 a:visited {color: black;}
 a:hover {color: #0030A1;}
 a:active {color: black;}
 
 
+
 /* Groups & Items (Desktop) */
 
-@media all and (min-width: 500px) {
-	.wrapper {
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+
+/* 	.wrapper {
 		width: 60%;
 		margin: auto;
 	}
@@ -182,7 +302,7 @@ a:active {color: black;}
 	}
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 600px) {
 	.wrapper {
 		width: 60%;
 		margin: auto;
@@ -190,5 +310,26 @@ a:active {color: black;}
 
 	.group {
 		flex-direction: row;
+	} */
+
+	header {
+	  display: flex;
+	  justify-content: space-between;
+ 	}
+
+	header h1 {
+	  margin: 14px 0 14px 28px;
+	  padding-top: 0;
 	}
+
+	header nav {
+    margin-top: 8px;
+  }
+}
+
+/* Google Map iFrame */
+
+iframe {
+  width: 100%;
+  height: 250px;
 }

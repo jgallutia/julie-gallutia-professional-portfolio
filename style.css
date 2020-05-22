@@ -156,6 +156,12 @@ footer a {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
+footer h2 {
+	padding-top: 20px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
 /* Specific Classes */
 
 main .about-me {

@@ -13,13 +13,20 @@
 
 <body>
 	<header>
-		<div class="wrapper">
-			<h1>Julie Gallutia</h1>
-			<h2>Former Teacher / Future Web Developer</h2>
-		</div>
+		<h1>Julie Gallutia</h1>
+   <nav>
+     <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+     </ul>
+   </nav>
 	</header>
+
 	<main>
 		<div class="wrapper">
+			<article id="home">
 			<div class="group">
 				<div class="item">
 					<img src="images/Julie.png" alt="Julie Gallutia's Profile Picture">
@@ -31,8 +38,10 @@
 				</div>
 			</div>
 		</div>
+	</article>
 		<div class="bg">
 		<div class="wrapper">
+			<article id="about">
 			<div class="group">
 				<div class="item-double">
 					<h2 class="about-me">My Professional Life</h2>
@@ -43,9 +52,11 @@
 					<img src="images/java.jpg" alt="Picture of Code">
 				</div>							
 			</div>
+			</article>
 		</div>
 		</div>
 		<div class="wrapper">
+			<article id="portfolio">
 			<div class="group">
 				<div class="item">
 					<a href="https://kentuckysportsradio.com/" target="_blank"><img class="square-image" src="images/UK.png" alt="University of Kentucky Logo"></a>
@@ -62,6 +73,7 @@
 			          </ol>
 				</div>							
 			</div>
+		</article>
 		</div>
 		<hr>
 
@@ -109,12 +121,33 @@
 	</main>
 	<footer>
 		<div class="wrapper">
+			<div class="group">
+						<div class="item">
+							<h1>Contact Me</h1>
+				  <form action="https://formspree.io/julie.gallutia@gmail.com"  method="post">
+				    <label for="full-name">Name:</label>
+				    <input id="full-name" type="text" name="name" autofocus="on" required>
+				    <label for="email">Email:</label>
+				    <input id="email" type="email" required>
+			     <label for="form-message">Your message:</label>
+				    <textarea id="form-message" name="message" required maxlength="200" rows="4" cols="25" placeholder="Please type your message."></textarea>
+			   	 <button type="submit">Submit</button>
+				  </form>
+		   </div>
+				<div class="item">
 		    <div class="contact-me">
-		      <p><a href="mailto:julie.gallutia@gmail.com" id="white-font"><i class="fas fa-envelope-square fa-fw"></i>Email Me</a></p>
-		      <p><a href="https://github.com/jgallutia" target="_blank" id="white-font-again"><i class="fab fa-github fa-fw"></i>GitHub</a></p>
-		      <p><a href="https://www.linkedin.com/in/julie-gallutia/" target="_blank" id="white-font-and-again"><i class="fab fa-instagram fa-fw"></i>LinkedIn</a></p>
+		      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.5695899617012!2d-86.1578105843652!3d39.77177110253398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886b50bfc2897d53%3A0x578fff2b8259a3e8!2s307%20N%20Pennsylvania%20St%2C%20Indianapolis%2C%20IN%2046204!5e0!3m2!1sen!2sus!4v1590156013968!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 		    </div>
-		</div>		
+		   </div>
+				<div class="item">
+		    <div class="contact-me">
+		      <p><a href="mailto:julie.gallutia@gmail.com"><i class="fas fa-envelope-square fa-fw"></i>Email Me</a></p>
+		      <p><a href="https://github.com/jgallutia" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a></p>
+		      <p><a href="https://www.linkedin.com/in/julie-gallutia/" target="_blank"><i class="fab fa-instagram fa-fw"></i>LinkedIn</a></p>
+		    </div>
+		   </div>
+		  </div>
+		 </div> 
 	</footer>
 </body>
 
